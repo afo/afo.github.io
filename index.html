@@ -4,12 +4,18 @@ title: Alexander Fred-Ojala
 subtitle: Everything is transient! Everything is now!
 use-site-title: true
 ---
+<style type="text/css">
+  a:hover {
+    color: #009999 !important;
+	font-color: #009999 !important;
+  }
+</style>
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
-    {% if post.medium %}
-    <a href="{{ post.medium }}">
+    {% if post.external %}
+    <a href="{{ post.external }}">
     {% else %}
     <a href="{{ post.url | prepend: site.baseurl }}">
     {% endif %}
@@ -22,7 +28,7 @@ use-site-title: true
 	  {% endif %}
     </a>
 
-    {% if post.medium %}
+    {% if post.external %}
     <p class="post-meta"><b>{{ post.date | date: "%B %-d, %Y" }} &emsp;</b>
     {% else %}
     <p class="post-meta"><b>{{ post.date | date: "%B %-d, %Y" }} &emsp;</b>  {% include read_time.html %}</p>
@@ -39,8 +45,8 @@ use-site-title: true
         {{ post.excerpt | markdownify  }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-        {% if post.medium %}
-        <a href="{{ post.medium }}" class="post-read-more"><button class="button button1" type="button">Read at Medium</button></a>
+        {% if post.external %}
+        <a href="{{ post.external }}" class="post-read-more"><button class="button button1" type="button">Read Full Post</button></a>
         {% else %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more"><button class="button button1" type="button">Read More</button></a>
         {% endif %}
