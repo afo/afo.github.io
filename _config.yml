@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "https://afo.github.io"
+url: "https://alex.fo"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -14,10 +14,10 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Alexander Fred-Ojala
+title: Alexander Fred Ojala
 
 # Short description of your site
-description: Everything is transient, Everything is now.
+description: Personal website
 
 # --- Navigation bar options --- #
 
@@ -128,6 +128,8 @@ url-pretty: "alex.fo"  # eg. "deanattali.com/beautiful-jekyll"
 # Truncates the excerpt to the specified number of words on the index page
 excerpt_length: 50
 
+excerpt_separator: <!--more-->
+
 # Character used to separate site title and description in HTML document title
 # and RSS feed title
 title-separator: "-"
@@ -135,7 +137,7 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/San_Francisco"
+timezone: "America/Los_Angeles"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/

@@ -1,16 +1,16 @@
 ---
-layout: post
-title: Free Public Wifi. Forever!
-date: 2017-10-30T00:51:31-07:00
+title: "Free Public Wifi. Forever!"
+date: 2017-10-16T00:51:31-07:00
 tags: ["lifehack"]
 bigimg: /img/sphere.jpg
-draft: true
 ---
+
 **TL;DR Quick trick to trick Wifi paywalls:**<br>
 (1) Connect to hotspot<br>
 (2) Use up free quota<br>
 (3) Change your MAC address using [LinkLair](https://halo.github.io/LinkLiar/installation.html) or [do it manually](https://www.howtogeek.com/192173/how-and-why-to-change-your-mac-address-on-windows-linux-and-mac/)<br>
-(4) Enjoy another round of free wifi!<br><br>
+(4) Enjoy another round of free wifi!
+
 `Repeat from (2)`
 
 <!--more-->
