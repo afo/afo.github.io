@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Future of AI
+title: Democratize AI: Prologue
 date: 2018-07-10T00:51:31-07:00
 tags: article
 external: https://medium.com/causys/democratize-ai-prologue-9f6740033856 
