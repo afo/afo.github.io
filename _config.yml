@@ -24,8 +24,8 @@ description: personal website
 # List of links in the navigation bar
 navbar-links:
   about: "aboutme"
-#  Resources:
-#    - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+  Resources:
+    - CV: "https://alex.fo/other/alexander_fred-ojala_cv.pdf"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
 #    - GitHub Pages: "https://pages.github.com/"
   txt: "https://alex.fo"
