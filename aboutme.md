@@ -1,26 +1,24 @@
 ---
 layout: page
-title: Alexander Fred Ojala
-subtitle: Boråsare, Bay Area expat, Berkeley Researcher
+title: Alexander Fred-Ojala
+subtitle: Boråsare, Bay Area, UC Berkeley
 comments: false
 ---
 
 ## Radnom<br><br>
 #### **UC Berkeley Research:**
-- [Visiting Scholar, IEOR](https://ieor.berkeley.edu/people/visitors)
-- [Co-lecturer, IND ENG 135 / 290: Applied Data Science](https://data-x.blog/)
-- [Research Lead, Data in Action](http://scet.berkeley.edu/data-x-lab/)
-- [Co-instructor, Blockchain Lab](http://scet.berkeley.edu/blockchain-lab/) 
-- [Chief Data Scientist, Berkeley Innovation Index](https://berkeleyinnovationindex.org/)
-- **Co-founder & COO, InnoClarity:** [innoclarity.com](https://innoclarity.com)
+- [Instructor, IEOR, College of Engineering](https://ieor.berkeley.edu/people/visitors)
+- [Co-creator & lecturer, Data-X IND ENG 135 / 290: Applied Data Science](https://data-x.blog/)
+- [Research Director, Data Lab](http://scet.berkeley.edu/data-x-lab/)
+- [Co-founder, Blockchain Lab](http://scet.berkeley.edu/blockchain-lab/) 
+- [Co-creator, Berkeley Innovation Index](https://berkeleyinnovationindex.org/)
+- **Founder / Founding team:** [inno-quant.com](https://inno-quant.com), [auranest.com](https://auranest.com), [wheelyscafe.com](https://wheelyscafe.com)
 
 - **Podcast (Swe):** [iTunes](https://itunes.apple.com/us/podcast/bor%C3%A5s-california/id1186954639?mt=2) and [RSS](https://alexfo.se/pod/index.php/feed/podcast/)
 
 - **Artsy Swedish Website:** [alexfo.se](https://alexfo.se)
 
-- **GPG key:** [`7BAA 6587 754E 9A82 934B F5CF 68F4 3050 52F6 A03B`](http://alex.fo/afo_public_key.txt)
-
-- **Encrypted email:** [ProtonMail](mailto:alex.fo@protonmail.com)
+- **GPG key:** [`1108 4476 A8B0 D1D6 7FC1  5BB9 07F8 2E1D 388A C5FE`](http://alex.fo/other/afo_public_key.txt)
 
 
 
