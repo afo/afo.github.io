@@ -18,7 +18,7 @@ comments: false
 
 - **Artsy Swedish Website:** [alex.fo/swe](https://alex.fo/swe)
 
-- **GPG key:** [`1108 4476 A8B0 D1D6 7FC1  5BB9 07F8 2E1D 388A C5FE`](http://alex.fo/other/afo_public_key.txt)
+- **PGP key:** [`1108 4476 A8B0 D1D6 7FC1  5BB9 07F8 2E1D 388A C5FE`](http://alex.fo/other/afo_public_key.txt)
 
 
 
