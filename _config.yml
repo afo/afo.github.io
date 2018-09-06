@@ -17,18 +17,19 @@ baseurl: ""
 title: afo
 
 # Short description of your site
-description: personal website
+description:
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
 navbar-links:
   about: "aboutme"
+  swe_artsy_website: "https://alex.fo/swe"
   Resources:
     - CV: "https://alex.fo/other/alexander_fred-ojala_cv.pdf"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
 #    - GitHub Pages: "https://pages.github.com/"
-  txt: "https://alex.fo"
+  home/txt: "https://alex.fo"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
