@@ -3,6 +3,7 @@
 <head>
 <style type="text/css">
 
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -10,6 +11,34 @@
     min-width: 100%; 
     min-height: 100%;
 }
+
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* Style the button used to pause/play the video */
+.myBtn {
+    width: 140px;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
 
 	.link
 	{
@@ -78,15 +107,60 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 
 
 
-</head>
-<body style="overflow:hidden;">
 
-<video autoplay='false' loop id="myVideo">
+</head>
+<body>
+
+<video autoplay loop id="myVideo">
   <source src="breakfast.mp4" type="video/mp4">
 </video>
 
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <!-- Use a button to pause/play the video with JavaScript --><br/>
+  <button class='myBtn' id="myBtn" onclick="playPause()">Play / Pause</button><br/>
+  <button class='myBtn' id="mute" onclick="toggleMute()">Mute</button>
+</div>
+
+
 
 <div id="content">
+
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+var mute = document.getElementById('mute')
+
+// Pause and play the video, and change the button text
+function playPause() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+
+function toggleMute() {
+  if(video.muted) {
+    video.muted = !video.muted
+    mute.innerHTML = "Mute"
+  }
+  else {
+    video.muted = !video.muted
+    mute.innerHTML = "Unmute"
+  }
+}
+
+
+</script>
+
 
 <br><br>
 
@@ -219,8 +293,6 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 
 
 </div>
-
-
 
 
 </body>
