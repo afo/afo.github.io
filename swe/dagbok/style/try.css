@@ -1,0 +1,65 @@
+/* Style for our header texts
+* --------------------------------------- */
+h1{
+    font-size: 3.5em;
+    font-size: 3.5vw;
+    font-family: arial;
+    color: black;
+    margin:0;
+    font-weight:bold;
+    line-height: 150%;
+}
+
+
+
+.intro p{
+    color: #fff;
+}
+
+.intro {
+    position:relative;
+    padding-right: 10px;
+}
+
+
+
+.button{
+position:absolute;
+top: 7px;
+left:1%;
+z-index: 4000;
+}
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next{
+    right: 50px;
+}
+
+.top {
+    position: absolute;
+    text-align: right;
+    margin: auto;
+    top: 5px;
+    right:33px;
+    padding:0;
+    color: #66b3ff;
+    font-size: 30px;
+    font-size: 3vw;
+    font-style: italic;
+    font-family: times;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
+
+<style type="text/css">
+
+.button{
+    position:absolute;
+    top: 1%;
+    left:1%;
+}
+
+	.link
+	{
+   color:white;
+   text-decoration: none;
+   font-family: 'helvetica';
+   font-size: 40px;
+
+	}
+
+
+
+#overlay {
+ position: fixed;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ //Cross-browser opacity below
+ -moz-opacity:1;
+ filter:alpha(opacity=100);
+ opacity:1;
+ z-index: 10000000;
+}
+
+
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+</style>
+<meta charset="UTF-8">
+<title>film</title>
+<style>
+body{ margin:0px; background:#000; }
+#bg_container{
+    position: absolute;
+    z-index: 0;
+    background-size: 100% 100%;
+    top: -15px;
+    left: 0px; /* fixed to left. Replace it by right if you want.*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    clip:rect(0px,4000px,785px,0px)
+}
+#bg{ width:100%; height:840px}
+#content{ position:absolute; top:0px; padding:30px;}
+</style>
+
+
+</head>
+<body>
+
+
+<a href="https://alexfo.se"><font color="deeppink" face="times" size=3 class="button">alexfo.se &#8617;<a> </font>
+
+
+<a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;playVideo&quot;)">Start</a> &bull; <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;pauseVideo&quot;)">Pause</a> &bull; <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;stopVideo&quot;)">Stop</a> - Hover over the links to see the called function
+
+
+
+<h2 class="w3-center"></h2>
+<div class="w3-content w3-display-container centering">
+
+<div class="mySlides" style="width:100%">
+      <div id="whateverID">
+   <iframe width="840" height="630"
+src="https://www.youtube.com/embed/mVEo1JMJPM0?enablejsapi=1&modestbranding=1&theme=light&loop=1&autoplay=0&showinfo=0&controls=0&playlist=NGYdUs0Xbn4,igMbmasd0S8,8bvqk2T7ILc" frameborder="0" allowfullscreen id="whateverID">
+</iframe>
+  </div>
+   </center>
+   </div>
+
+
+
+
+
+
+
+
+
+
+  <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;previousVideo&quot;)" style="left: -45px" class="w3-btn-floating w3-display-left w3-black w3-hover-purple w3-ripple" onclick="plusDivs(-1)">&#10094;</a>
+  <a href="javascript:void callPlayer(&quot;whateverID&quot;,&quot;nextVideo&quot;)" style="right:-45px" class="w3-btn-floating w3-display-right w3-black w3-hover-purple w3-ripple" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+<script type="text/javascript">
+/**
+ * @author       Rob W <gwnRob@gmail.com>
+ * @website      http://stackoverflow.com/a/7513356/938089
+ * @version      20131010
+ * @description  Executes function on a framed YouTube video (see website link)
+ *               For a full list of possible functions, see:
+ *               https://developers.google.com/youtube/js_api_reference
+ * @param String frame_id The id of (the div containing) the frame
+ * @param String func     Desired function to call, eg. "playVideo"
+ *        (Function)      Function to call when the player is ready.
+ * @param Array  args     (optional) List of arguments to pass to function func*/
+function callPlayer(frame_id, func, args) {
+    if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
+    var iframe = document.getElementById(frame_id);
+    if (iframe && iframe.tagName.toUpperCase() != 'IFRAME') {
+        iframe = iframe.getElementsByTagName('iframe')[0];
+    }
+
+    // When the player is not ready yet, add the event to a queue
+    // Each frame_id is associated with an own queue.
+    // Each queue has three possible states:
+    //  undefined = uninitialised / array = queue / 0 = ready
+    if (!callPlayer.queue) callPlayer.queue = {};
+    var queue = callPlayer.queue[frame_id],
+        domReady = document.readyState == 'complete';
+
+    if (domReady && !iframe) {
+        // DOM is ready and iframe does not exist. Log a message
+        window.console && console.log('callPlayer: Frame not found; id=' + frame_id);
+        if (queue) clearInterval(queue.poller);
+    } else if (func === 'listening') {
+        // Sending the "listener" message to the frame, to request status updates
+        if (iframe && iframe.contentWindow) {
+            func = '{"event":"listening","id":' + JSON.stringify(''+frame_id) + '}';
+            iframe.contentWindow.postMessage(func, '*');
+        }
+    } else if (!domReady ||
+               iframe && (!iframe.contentWindow || queue && !queue.ready) ||
+               (!queue || !queue.ready) && typeof func === 'function') {
+        if (!queue) queue = callPlayer.queue[frame_id] = [];
+        queue.push([func, args]);
+        if (!('poller' in queue)) {
+            // keep polling until the document and frame is ready
+            queue.poller = setInterval(function() {
+                callPlayer(frame_id, 'listening');
+            }, 250);
+            // Add a global "message" event listener, to catch status updates:
+            messageEvent(1, function runOnceReady(e) {
+                    if (!iframe) {
+                        iframe = document.getElementById(frame_id);
+                        if (!iframe) return;
+                        if (iframe.tagName.toUpperCase() != 'IFRAME') {
+                            iframe = iframe.getElementsByTagName('iframe')[0];
+                            if (!iframe) return;
+                        }
+                    }
+                if (e.source === iframe.contentWindow) {
+                    // Assume that the player is ready if we receive a
+                    // message from the iframe
+                    clearInterval(queue.poller);
+                    queue.ready = true;
+                    messageEvent(0, runOnceReady);
+                    // .. and release the queue:
+                }
+            }, false);
+        }
+    } else if (iframe && iframe.contentWindow) {
+        // When a function is supplied, just call it (like "onYouTubePlayerReady")
+        if (func.call) return func();
+        // Frame exists, send message
+        iframe.contentWindow.postMessage(JSON.stringify({
+            "event": "command",
+            "func": func,
+            "args": args || [],
+            "id": frame_id
+        }), "*");
+    }
+    /* IE8 does not support addEventListener... */
+    function messageEvent(add, listener) {
+        var w3 = add ? window.addEventListener : window.removeEventListener;
+        w3 ?
+            w3('message', listener, !1)
+        :
+            (add ? window.attachEvent : window.detachEvent)('onmessage', listener);
+    }
+}
+
+// Example: call play
+// Note that the function automatically queues
+// the request when the DOM/frame is not ready yet
+callPlayer('whateverID', 'playVideo');
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

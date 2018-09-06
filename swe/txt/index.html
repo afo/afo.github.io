@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
+
+
+
+
+<style type="text/css">
+
+.button{
+    position:absolute;
+    top: 1%;
+    left:1%;
+}
+
+	.link
+	{
+   color:white;
+   text-decoration: none;
+   font-family: 'helvetica';
+   font-size: 40px;
+
+	}
+
+
+
+#overlay {
+ position: fixed;
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ //Cross-browser opacity below
+ -moz-opacity:1;
+ filter:alpha(opacity=100);
+ opacity:1;
+ z-index: 10000000;
+}
+
+
+
+.centering {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+</style>
+<meta charset="UTF-8">
+<title>txt</title>
+<style>
+body{ margin:0px; background:#000; }
+#bg_container{
+    position: absolute;
+    z-index: 0;
+    background-size: 100% 100%;
+    top: -15px;
+    left: 0px; /* fixed to left. Replace it by right if you want.*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    clip:rect(0px,4000px,785px,0px)
+}
+#bg{ width:100%; height:840px}
+#content{ position:absolute; top:0px; padding:30px;}
+</style>
+
+
+</head>
+<body>
+
+
+<a href="https://alexfo.se"><font color="deeppink" face="times" size=3 class="button">alexfo.se &#8617;<a> </font>
+
+
+
+
+
+<h2 class="w3-center"></h2>
+<div class="w3-content w3-display-container centering">
+
+<div class="mySlides" style="width:100%:height:100%">
+<figure>
+<font color="white">
+<h2>MANI (2016)</h2>
+ <p> 
+ Du tar puls på världen <br>
+å allt är i eggande rörelse.<br>
+Varje ögonblick skälver<br>
+när alla möjligheter lockar (med oändlig vällust).<br>
+Du trängtar allt,<br>
+du vill fridyka -<br>
+tyngdlös förlustelse -<br>
+i existensens ändlösa ocean.<br>
+<br>
+Så du uppdaterar mailen<br>
+(för att se om något har hänt).<br>
+<br>
+<br>
+Apatisk,<br>
+lealös mellan lakan.<br>
+Det är tungt att andas,<br>
+omöjligt att lyfta ögonlocken.<br>
+Livets ok krossar benen<br>
+i din otränade bröstkorg.<br>
+Suicidal, <br>
+självdiagnostiserad:<br>
+kliniskt deprimerad.<br>
+Isolerad bakom barrikader<br>
+av neddragna persienner.<br>
+<br>
+Så du swipear höger<br>
+(för att se om evig kärlek finns).
+ </font>
+</figure>
+</div>
+
+<div class="mySlides" style="width:100%">
+<figure>
+<font color="white">
+<h2>BUDDHAS GLANS (2015)</h2>
+ <p>Centrum av centrum, självaste kärnans kärna, <br>
+likt mandeln, utsökt sluten av sig själv, expanderar du inåt -- <br>
+ditt universum, detta universum, de mest avlägsna av stjärnor, <br>
+å bortom dem: ditt kött, din frukt,<br>
+din längtan, bortom all längtan.<br>
+<br>
+Inget fäster vid dig längre, och du ler,<br>
+för den upplysta existensen väger inget (på en badrumsvåg).<br>
+Ditt skal upplöses, du expanderar utåt -- <br>
+å i ändlös rymd händer det: <br>
+en älskvärd värld komponeras,<br>
+när allt är i samklang, med allt som är du.<br>
+<br>
+För första gången upplysta av din oändliga frid,<br>
+en triljard stjärnor snurrar,<br>
+genom dig, genom natten.<br>
+Fluorescerande i skenet av ditt ljusa medvetande.<br>
+För _i_ dig finns närvaron<br>
+som kommer vara,<br>
+när alla stjärnor har dött.
+</p>
+ </font>
+</figure>
+</div>
+
+<div class="mySlides" style="width:100%">
+   <font color="white"><center>
+   <h3>SINNENAS SOLFÖRMÖRKELSE (2013)</h3>
+   </font>
+
+<img src="https://alexfo.se/pics/sinnenas.jpg" style="width:85%;height:85%">
+   </center>
+</div>
+
+<div class="mySlides" style="width:100%">
+<figure>
+<font color="white">
+<h2>Sommartid (12" version)</h2>
+ <p>Slitstarka tumvantar plockar lupiner vid augustis vägskäl <br>
+ och den svagaste humlan bränner sig fast <br>
+ på sommarens torra näthinna<br>
+ <br>
+Där och då<br>
+kräks jag<br>
+i din mun <br>
+för att nära,<br>
+komma nära.<br>
+</p>
+ </font>
+</figure>
+</div>
+
+
+
+
+
+
+  <a style="left: -45px" class="w3-btn-floating w3-display-left w3-black w3-hover-purple w3-ripple" onclick="plusDivs(-1)">&#10094;</a>
+  <a style="right:-45px" class="w3-btn-floating w3-display-right w3-black w3-hover-purple w3-ripple" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

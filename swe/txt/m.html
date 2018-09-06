@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+
+
+
+
+<meta charset="UTF-8">
+<style type="text/css">
+
+
+.button{
+    position:absolute;
+    top: 1%;
+    left:1%;
+}
+
+	.link
+	{
+   color:white;
+   text-decoration: none;
+   font-family: 'helvetica';
+   font-size: 40px;
+
+	}
+
+h2 {
+	font-size:20px;
+}
+
+p {
+	font-size:10px;
+}
+
+</style>
+
+</head>
+<body style="background-color: black">
+
+
+<a href="https://alexfo.se"><font color="deeppink" face="times" size=3 class="button">alexfo.se &#8617;<a> </font>
+
+
+
+
+
+<h2 class="w3-center"></h2>
+<br><div class="w3-content w3-display-container centering" style="left:-20px">
+
+<div class="mySlides" style="width:100%:height:100%">
+<figure>
+<font color="white">
+<h2>MANI (2016)</h2>
+ <p> 
+ Du tar puls på världen <br>
+å allt är i eggande rörelse.<br>
+Varje ögonblick skälver<br>
+när alla möjligheter lockar (med oändlig vällust).<br>
+Du trängtar allt,<br>
+du vill fridyka -<br>
+tyngdlös förlustelse -<br>
+i existensens ändlösa ocean.<br>
+<br>
+Så du uppdaterar mailen<br>
+(för att se om något har hänt).<br>
+<br>
+<br>
+Apatisk,<br>
+lealös mellan lakan.<br>
+Det är tungt att andas,<br>
+omöjligt att lyfta ögonlocken.<br>
+Livets ok krossar benen<br>
+i din otränade bröstkorg.<br>
+Suicidal, <br>
+självdiagnostiserad:<br>
+kliniskt deprimerad.<br>
+Isolerad bakom barrikader<br>
+av neddragna persienner.<br>
+<br>
+Så du swipear höger<br>
+(för att se om evig kärlek finns).
+ </font>
+</figure>
+</div>
+
+<div class="mySlides" style="width:150%">
+<figure>
+<font color="white">
+<h2>BUDDHAS GLANS (2015)</h2>
+ <p>Centrum av centrum, självaste kärnans kärna, <br>
+likt mandeln, utsökt sluten av sig själv, expanderar du inåt -- <br>
+ditt universum, detta universum, de mest avlägsna av stjärnor, <br>
+å bortom dem: ditt kött, din frukt,<br>
+din längtan, bortom all längtan.<br>
+<br>
+Inget fäster vid dig längre, och du ler,<br>
+för den upplysta existensen väger inget (på en badrumsvåg).<br>
+Ditt skal upplöses, du expanderar utåt -- <br>
+å i ändlös rymd händer det: <br>
+en älskvärd värld komponeras,<br>
+när allt är i samklang, med allt som är du.<br>
+<br>
+För första gången upplysta av din oändliga frid,<br>
+en triljard stjärnor snurrar,<br>
+genom dig, genom natten.<br>
+Fluorescerande i skenet av ditt ljusa medvetande.<br>
+För _i_ dig finns närvaron<br>
+som kommer vara,<br>
+när alla stjärnor har dött.
+</p>
+ </font>
+</figure>
+</div>
+
+<div class="mySlides" style="width:100%;left: 20px">
+   <font color="white"><center>
+   <h2 style="left:20px">SINNENAS SOLFÖRMÖRKELSE<br>(2013)</h2>
+   </font>
+
+<img src="https://alexfo.se/pics/sinnenas.jpg" style="width:85%;height:85%;left:20px">
+   </center>
+</div>
+
+<div class="mySlides" style="width:100%">
+<figure>
+<font color="white">
+<h2>Sommartid (12" version)</h2>
+ <p>Slitstarka tumvantar plockar lupiner vid augustis vägskäl <br>
+ och den svagaste humlan bränner sig fast <br>
+ på sommarens torra näthinna<br>
+ <br>
+Där och då<br>
+kräks jag<br>
+i din mun <br>
+för att nära,<br>
+komma nära.<br>
+</p>
+ </font>
+</figure>
+</div>
+
+
+
+
+
+
+
+  <a style="right:-25px" class="w3-btn-floating w3-display-right w3-black w3-hover-purple w3-ripple" onclick="plusDivs(1)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
