@@ -14,9 +14,9 @@ comments: false
 - [Co-creator, Berkeley Innovation Index](https://berkeleyinnovationindex.org/)
 - **Founder / Founding team:** [inno-quant.com](https://inno-quant.com), [auranest.com](https://auranest.com), [wheelyscafe.com](https://wheelyscafe.com)
 
-- **Podcast (Swe):** [iTunes](https://itunes.apple.com/us/podcast/bor%C3%A5s-california/id1186954639?mt=2) and [RSS](https://alexfo.se/pod/index.php/feed/podcast/)
+<!--- **Podcast (Swe):** [iTunes](https://itunes.apple.com/us/podcast/bor%C3%A5s-california/id1186954639?mt=2) and [RSS](https://alexfo.se/pod/index.php/feed/podcast/)
 
-- **Artsy Swedish Website:** [alexfo.se](https://alexfo.se)
+- **Artsy Swedish Website:** [alexfo.se](https://alexfo.se)-->
 
 - **GPG key:** [`1108 4476 A8B0 D1D6 7FC1  5BB9 07F8 2E1D 388A C5FE`](http://alex.fo/other/afo_public_key.txt)
 
