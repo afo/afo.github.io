@@ -3,6 +3,33 @@
 <head>
 <style type="text/css">
 
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+    .video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 200%; 
+  min-height: 200%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+
+  /* Center the video */
+  position: absolute;
+}
+
 	.link
 	{
    color:white;
@@ -72,18 +99,22 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 </head>
 <body style="overflow:hidden;">
 
+<video autoplay loop id="myVideo">
+  <source src="breakfast.mp4" type="video/mp4">
+</video>
+
 <div id="overlay">
 <div id="content">
 
 <br><br>
 
-<a href="http://alexfo.se/txt" style="text-decoration: none">
+<a href="./txt" style="text-decoration: none">
     <div class="link">
         <font color="deeppink">txt</font>
     </div>
 </a>
 
-<a href="http://alexfo.se/pix" style="text-decoration: none">
+<a href="./pix" style="text-decoration: none">
     <div class="link">
         <font color="deeppink">pix</font>
     </div>
@@ -93,7 +124,7 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 
 
 
-<a href="http://alexfo.se/film" style="text-decoration: none">
+<a href="./film" style="text-decoration: none">
     <div class="link">
         <font color="deeppink">film</font>
     </div>
@@ -107,7 +138,7 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 </a>
 
 
-<a href="http://alexfo.se/musik" style="text-decoration: none">
+<a href="./musik" style="text-decoration: none">
     <div class="link">
         <font color="deeppink">musik</font>
     </div>
@@ -120,7 +151,7 @@ if((navigator.userAgent.match(/iPhone/i)) ||
     </div>
 </a>
 
-<a href="http://alexfo.se/dagbok" style="text-decoration: none;">
+<a href="./dagbok" style="text-decoration: none;">
     <div class="link">
         <font color="deeppink">dagbok</font> <img src="new2.gif" alt="new" style="width:14%;height:14%">
     </div>
@@ -128,7 +159,7 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 
 
 
-<a href="http://alexfo.se/msn/" style="text-decoration: none">
+<a href="./msn/" style="text-decoration: none">
     <div class="link">
         <font color="deeppink">msn-loggar</font>
     </div>
@@ -189,7 +220,7 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 </a>
 -->
 
-<a href="mailto:write@alexfo.se" style="text-decoration: none">
+<a href="mailto:afo@berkeley.edu" style="text-decoration: none">
     <div class="link2">
         <font color="deeppink">mail</font>
     </div>
@@ -207,10 +238,6 @@ if((navigator.userAgent.match(/iPhone/i)) ||
 
 </div>
 
-</div>
-
-<div id="bg_container">
-  <iframe id="bg" src="https://www.youtube.com/embed/wAsbi7X8asY?playlist=wAsbi7X8asY&autoplay=1&loop=1&controls=0&loop=1&showinfo=0&modestbranding=1&disablekb=1&enablejsapi=1&fs=0" frameborder="0"></iframe>
 </div>
 
 
