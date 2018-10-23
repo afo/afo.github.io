@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/afo
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alex.fo
+  * I am afo (https://keybase.io/afo) on keybase.
+  * I have a public key with fingerprint 1108 4476 A8B0 D1D6 7FC1  5BB9 07F8 2E1D 388A C5FE
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101956525486f0067a63d48d7305d44fa71a0cd76022550288abde0fb1d86fc87cb0a",
+      "fingerprint": "11084476a8b0d1d67fc15bb907f82e1d388ac5fe",
+      "host": "keybase.io",
+      "key_id": "07f82e1d388ac5fe",
+      "kid": "0101956525486f0067a63d48d7305d44fa71a0cd76022550288abde0fb1d86fc87cb0a",
+      "uid": "437e230fde6afd6302e4d94ed5a31f19",
+      "username": "afo"
+    },
+    "service": {
+      "hostname": "alex.fo",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1540271776,
+  "expire_in": 157680000,
+  "prev": "9e408d3c0f1dc5638408023b8823d26e88c999539258194d32a4643ba8cdc095",
+  "seqno": 5,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v2
+
+owGtUm1MFFcUXRAQpFSIocaCIEPAtKXbN98z24paP1CgIIsNjZgsM/PewLjb3XV3
+WVwpanEpH6K1ErWAwaZCCQZpq6FrSFsiulihQUVCWxqN2IKSqg1NBCKgnbH1V//2
+/Xm5551z3rk393DEAl1owMIZ/XKuxv8koH9C1OUPdLSXYqINejBDKWZGzy5kgcjp
+MpkViBkwgAOcpxmaoCmOkQFgWIEhIcVBlgQ0pChZYHEBSJBlAEHQNCA4ThAhArKI
+Q1UgcawkAgFLwWTFWogcdodidam2OA44imIZgRMBxCHDyhJOiyIPWJkjEA5J1Uai
+ZaQKi2xOTaGGEwUn0is2FVML0z/x/sv/n3MXP7OjSBYRJJAhYgQZMiQgEAV5CkFa
+IHEZ5zWiEzmswvtIZQuyDStLwVTArUhIm6nWxPNHC9qll7Uu7A6byybZLCpY5HLZ
+nQZN5PLYNVYJEk3/6k2iYoXq9FSFGzmcis2KGXCVKbkUzRCnKUCwOMsyKRjaZVcc
+yKRoDJplOKAe7R/kVi15RAEOkhKQcSjRDMllqTUgSJHjCBISDOI4ied5muQJmsN5
+CpKEQDEUKQqcBCXA05jW0k6rDTPQak6hUPV0KoVWwVXsQFjZourA2CBdQKguJDhQ
+2yvdorDI58vWMhGpayrLEtr0Sz+bs+y52LiybVZJNLLnG69MLkn9bumJaZIdM8bf
+6w+a5kNCruo7z78WvnD21o1T4V/OpeTxlZM3UzwnM6pOVzvd7lXz9ene67MHsjIq
+z2XU1SbciR6eaizxJxvPfNJ5ofabvlYuej5q/VRP+AdXXFMldb8XOe6seBoqHWs8
+at7LrE5PbGld/GNPefxHX/Xk+N744VLv7PfMkT73S0mL/U2+ZXu2NRRtNxxNfH0m
++4vUDfOGnXeT43Z4BjzjOccvtf9R1VWRez0/+cPtnZvHdUURAw+NZZlP/fZDAVs6
+7P2eib62yJHDjWEx7Re9zobBd5+c9kVdHjLFRWYF7z10Lf9sb/yB/t0vwrq73opl
+v3V3B1WAy2X3Bjt2U2P1+3LfE6pPPU6L3br/TPf+BbrWNWMF/InR+rkV65q7tg01
++JqyUx/NTsTWGUdDTnanCcWWXwc33k/z/MXSw5S7NopwtMdMNuvfKf/UPOLfdGzV
+TMYrQ7drtoZnfpwm76ta0vRggg0+Wxx04bilNzyavXH7hYK2zIycmFtB3qTmN8mH
+v9wHVdLquNEodNDkJ6tSa9f61oVuGb/acrN3uTc6/sF0k2N6eJNvc9KOkYqfHh15
+ea0tPftgwc9zX5eXbjQnjFZ6I/4cOxfW/HYu8Zbx2vquV42BaY/bP09o8eSRK/PW
+mGv2lnzbk/k3
+=sX/p
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/afo
+
+==================================================================
