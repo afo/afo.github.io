@@ -13,6 +13,7 @@ comments: false
 ## Organizations I support:<br><br>
 #### - **[Extinction Rebellion](https://rebellion.earth/)**
 #### - **[Eletronic Frontier Foundation](https://www.eff.org/)**
+#### - **[Wikimedia Foundation](https://www.wikimedia.org/)**
 
 <br>
 <br>
