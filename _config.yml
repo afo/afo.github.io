@@ -28,6 +28,7 @@ navbar-links:
       - about: "aboutme"
       - swe_artsy_website: "https://alex.fo/swe"
       - CV: "https://alex.fo/other/alexander_fred-ojala_cv.pdf"
+      - causes: "causes"
 #    - Learn markdown: "http://www.markdowntutorial.com/"
 #    - GitHub Pages: "https://pages.github.com/"
 
