@@ -5,7 +5,7 @@ subtitle: Boråsare, Bay Area, UC Berkeley
 comments: false
 ---
 
-# Humanitarian and Environmental causes<br><br>
+## Humanitarian and Environmental causes<br><br>
 ### - **[My Pledge and the 3.5 Manifesto](alex.fo/pledge.txt)**
 
 <br><br>
